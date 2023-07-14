@@ -1,0 +1,114 @@
+
+<html>
+  <head>
+    <style>
+      #grad1 {
+        height : 625px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(rgb(236, 134, 65), rgb(107, 49, 15));
+      }
+
+      #title_align{
+        margin-left: 10px;
+      }
+
+      #text_color1 {
+        
+        color: white;
+      }
+
+      #text_color2 {
+        
+        color: rgb(7, 6, 6);
+      }
+
+      #content_size{
+        font-size: large;
+      }
+
+      #align1{
+        text-align: center;
+      }
+
+      #align2{
+        padding-left: 0;
+        margin-left: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      ul li:before {
+        content: '👉';
+      }
+
+      .text:hover {
+        font-weight: bold;
+    }
+
+    #login_align{
+      text-align: right;
+      margin-right: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="text_color1" class="modal-body row">
+      <div id="grad1" class="col-md-6">
+        <div id="title_align">
+          <h1>eVisa Portal</h1>
+        <h5>Visa Made Easy</h5>
+        </div>
+        <br><br>
+        <div id="align1">
+          <h4>What you can do?</h4>
+          <br><br>
+        </div>
+          <div id="align2">
+            <div id="content_size">
+              
+                <ul>
+                  <div class="text"><li>Apply for Visa</li></div><br>
+                  <div class="text"><li>Track Visa Status</li></div><br>
+                  <div class="text"><li>Update Details</li></div><br>
+                  <div class="text"><li>Upload Documents Seamlessly</li></div><br>
+                  <div class="text"><li>Know Your Visa Type</li></div><br>
+                </ul>
+            </div>
+          </div>
+          
+
+        
+      </div>
+      <div class="col-md-6">
+        <div id="text_color2">
+          <h1 routerLink="empdash">LOGIN</h1>
+          <br><br>
+          <div>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <br><br>
+              <div class="form-check">
+                <a href="#">Don't have an account? Click here...</a>
+              </div>
+              <br><br>
+              <div id="login_align">
+                <button routerLink="empdash" type="submit" class="btn btn-primary">LOGIN</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
