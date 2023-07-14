@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+
+
+
+<head>
+
+
+
+
+  <title>Visa Application Request Details</title>
+
+
+
+
+  <style>
+
+   
+
+body {
+
+
+
+
+  font-family: Arial, sans-serif;
+
+
+
+
+  margin: 0;
+
+
+
+
+  padding: 20px;
+
+
+
+
+}
+
+
+
+
+ 
+
+
+
+
+.container {
+
+
+
+
+  max-width: 800px;
+
+
+
+
+  margin: 0 auto;
+
+
+
+
+}
+
+
+
+
+ 
+
+
+
+
+h1 {
+
+
+
+
+  text-align: center;
+
+
+
+
+  margin-bottom: 30px;
+
+
+
+
+}
+
+
+
+
+ 
+
+
+
+
+label {
+
+
+
+
+  font-weight: bold;
+
+
+
+
+  display: block;
+
+
+
+
+  margin-bottom: 10px;
+
+
+
+
+}
+
+
+
+
+ 
+
+
+
+
+input[type="text"],
+
+
+
+
+input[type="email"],
+
+
+
+
+input[type="date"],
+
+
+
+
+textarea {
+
+
+
+
+  width: 100%;
+
+
+
+
+  padding: 10px;
+
+
+
+
+  border: 1px solid #ccc;
+
+
+
+
+  border-radius: 4px;
+
+
+
+
+  margin-bottom: 20px;
+
+
+
+
+}
+
+
+
+
+ 
+
+
+
+
+input[type="submit"] {
+
+
+
+
+  background-color: #4CAF50;
+
+
+
+
+  color: white;
+
+
+
+
+  padding: 10px 20px;
+
+
+
+
+  border: none;
+
+
+
+
+  border-radius: 4px;
+
+
+
+
+  cursor: pointer;
+
+
+
+
+}
+
+
+
+
+ 
+
+
+
+
+input[type="submit"]:hover {
+
+
+
+
+  background-color: #45a049;
+
+
+
+
+}
+
+
+
+
+
+    body {
+
+
+
+
+      font-family: Arial, sans-serif;
+
+
+
+
+      margin: 0;
+
+
+
+
+      padding: 20px;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    h1 {
+
+
+
+
+      text-align: center;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    .container {
+
+
+
+
+      max-width: 800px;
+
+
+
+
+      margin: 0 auto;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    label {
+
+
+
+
+      font-weight: bold;
+
+
+
+
+      display: block;
+
+
+
+
+      margin-bottom: 10px;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    input[type="text"],
+
+
+
+
+    input[type="email"],
+
+
+
+
+    textarea {
+
+
+
+
+      width: 100%;
+
+
+
+
+      padding: 10px;
+
+
+
+
+      border: 1px solid #ccc;
+
+
+
+
+      border-radius: 4px;
+
+
+
+
+      margin-bottom: 20px;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    textarea {
+
+
+
+
+      height: 100px;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    input[type="submit"] {
+
+
+
+
+      background-color: #4CAF50;
+
+
+
+
+      color: white;
+
+
+
+
+      padding: 10px 20px;
+
+
+
+
+      border: none;
+
+
+
+
+      border-radius: 4px;
+
+
+
+
+      cursor: pointer;
+
+
+
+
+    }
+
+
+
+
+ 
+
+
+
+
+    input[type="submit"]:hover {
+
+
+
+
+      background-color: #45a049;
+
+
+
+
+    }
+
+
+
+
+  </style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+  <div class="container">
+
+
+
+
+    <h1>Visa Application Request Details</h1>
+
+
+
+
+ 
+
+
+
+
+    <form>
+
+
+
+
+      <label for="full-name">Full Name:</label>
+
+
+
+
+      <input type="text" id="full-name" name="full-name" required>
+
+
+
+
+
+      <label for="employee-id">Employee ID:</label>
+
+      <input type="text" id="employee-id" name="employee-id" required>
+
+
+
+
+     
+
+
+
+
+<label for="designation">Designation:</label>
+
+
+
+
+<input type="text" id="designation" name="designation" required>
+
+
+
+
+ 
+
+
+
+
+<label for="experience">Years of Experience:</label>
+
+
+
+
+<input type="number" id="experience" name="experience" required>
+
+
+
+
+ 
+
+
+
+
+<label for="role">Role:</label>
+
+
+
+
+<input type="text" id="role" name="role" required>
+
+
+
+
+ 
+
+
+
+
+<label for="applied-for">Applied For:</label>
+
+
+
+
+<input type="text" id="applied-for" name="applied-for" required>
+
+
+
+
+ 
+
+
+
+
+<label for="applied-from">Applied From:</label>
+
+
+
+
+<input type="date" id="applied-from" name="applied-from" required>
+
+
+
+
+ 
+
+
+
+
+<label for="applied-upto">Applied Upto:</label>
+
+
+
+
+<input type="date" id="applied-upto" name="applied-upto" required>
+
+
+
+
+ 
+
+
+
+
+<label for="category">Category:</label>
+
+
+
+
+<select id="category" name="category" required>
+
+
+
+
+  <option value="">Select Category</option>
+
+
+
+
+  <option value="Full-Time">Full-Time</option>
+
+
+
+
+  <option value="Part-Time">Part-Time</option>
+
+
+
+
+  <option value="Contract">Contract</option>
+
+
+
+
+
+
+</select>
+
+
+
+
+ 
+
+
+
+
+<label for="project-code">Project Code:</label>
+
+
+
+
+
+<input type="text" id="project-code" name="project-code" required>
+
+
+
+
+<label for="add-comment">Add Comments:</label>
+
+      <textarea id="add-comment" name="add-comment" required></textarea>
+
+
+
+
+      <button class="button">Accept</button>
+
+    <button class="button reject">Reject</button>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+     
+
+
+
+
+     
+
+     
+
+    </form>
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+
+
+
+</html>

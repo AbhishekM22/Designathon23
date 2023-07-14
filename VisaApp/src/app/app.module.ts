@@ -16,6 +16,8 @@ import { DocUploadComponent } from './doc-upload/doc-upload.component';
 import { TrackApplicationComponent } from './track-application/track-application.component';
 import { ManagerLoginComponent } from './manager-login/manager-login.component';
 import { HrLoginComponent } from './hr-login/hr-login.component';
+import { EmployeeReportComponent } from './employee-report/employee-report.component';
+import { AppreqDetailsComponent } from './appreq-details/appreq-details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { HrLoginComponent } from './hr-login/hr-login.component';
     DocUploadComponent,
     TrackApplicationComponent,
     ManagerLoginComponent,
-    HrLoginComponent
+    HrLoginComponent,
+    EmployeeReportComponent,
+    AppreqDetailsComponent
   ],
   imports: [
     BrowserModule,
