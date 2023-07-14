@@ -83,28 +83,17 @@
       </div>
       <div class="col-md-6">
         <div id="text_color2">
-          <h1 routerLink="empdash">LOGIN</h1>
+          <h1 routerLink="empdash">Sign In As </h1>
           <br><br>
           <div>
             <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <div class="loginoptions">
+                <button routerLink="login" type="button" class="button">Employee</button><br><br>
+                <button routerLink="hrlogin" type="button" class="button">HR</button><br><br>
+                <button routerLink="managerlogin" type="button" class="button">Manager</button>
               </div>
               <br><br>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
               <br><br>
-              <div class="form-check">
-                <a href="#">Don't have an account? Click here...</a>
-              </div>
-              <br><br>
-              <div id="login_align">
-                <button routerLink="empdash" type="submit" class="btn btn-primary">LOGIN</button>
-              </div>
             </form>
           </div>
         </div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DocumentUploadComponent } from './document-upload.component';
+import { ManagerLoginComponent } from './manager-login.component';
 
-describe('DocumentUploadComponent', () => {
-  let component: DocumentUploadComponent;
-  let fixture: ComponentFixture<DocumentUploadComponent>;
+describe('ManagerLoginComponent', () => {
+  let component: ManagerLoginComponent;
+  let fixture: ComponentFixture<ManagerLoginComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DocumentUploadComponent ]
+      declarations: [ ManagerLoginComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DocumentUploadComponent);
+    fixture = TestBed.createComponent(ManagerLoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

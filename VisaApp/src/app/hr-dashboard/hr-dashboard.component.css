@@ -1,0 +1,28 @@
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(236, 134, 65), rgb(107, 49, 15));
+}
+
+.logo{
+    color: white;
+}
+
+
+   
+
+.navbar .menu a, .profile a{
+    padding-right: 20px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.logo
+{
+    padding-left: 20px;
+}

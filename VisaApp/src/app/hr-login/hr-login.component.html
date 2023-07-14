@@ -83,18 +83,18 @@
       </div>
       <div class="col-md-6">
         <div id="text_color2">
-          <h1 >LOGIN</h1>
+          <h1 routerLink="empdash">LOGIN</h1>
           <br><br>
           <div>
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Employee Id</label>
-                <input type="number" class="form-control" name="empid" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="empid" placeholder="Enter your Employee Id" required>
+                <input type="number" name="empid" [(ngModel)]="empid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Employee Id" required>
               </div>
               <br><br>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" name="passw" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="passw" required>
+                <input type="password" name="passw" [(ngModel)]="passw" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <br><br>
@@ -106,7 +106,7 @@
               </div>
               <br><br>
               <div id="login_align">
-                <button (click)="login(empid,passw)" type="submit" class="btn btn-primary">LOGIN</button>
+                <button (click)="hrlogin(empid,passw)" type="submit" class="btn btn-primary">LOGIN</button>
               </div>
             </form>
           </div>

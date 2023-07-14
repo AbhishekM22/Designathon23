@@ -12,8 +12,10 @@ import { AppliedVisaComponent } from './applied-visa/applied-visa.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DocumentUploadComponent } from './document-upload/document-upload.component';
-import { TrackapplicationComponent } from './trackapplication/trackapplication.component';
+import { DocUploadComponent } from './doc-upload/doc-upload.component';
+import { TrackApplicationComponent } from './track-application/track-application.component';
+import { ManagerLoginComponent } from './manager-login/manager-login.component';
+import { HrLoginComponent } from './hr-login/hr-login.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,10 @@ import { TrackapplicationComponent } from './trackapplication/trackapplication.c
     AppliedVisaComponent,
     HomeComponent,
     NavbarComponent,
-    DocumentUploadComponent,
-    TrackapplicationComponent
+    DocUploadComponent,
+    TrackApplicationComponent,
+    ManagerLoginComponent,
+    HrLoginComponent
   ],
   imports: [
     BrowserModule,
