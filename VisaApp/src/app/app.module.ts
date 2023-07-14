@@ -12,6 +12,7 @@ import { AppliedVisaComponent } from './applied-visa/applied-visa.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DocumentUploadComponent } from './document-upload/document-upload.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ApplyVisaComponent,
     AppliedVisaComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    DocumentUploadComponent
   ],
   imports: [
     BrowserModule,
