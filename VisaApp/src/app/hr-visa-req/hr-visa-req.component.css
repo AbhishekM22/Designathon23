@@ -1,0 +1,57 @@
+.req-container{
+    display: flex;
+    margin: 10px 10px;
+    padding:10px 10px ;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.req-container:hover{
+    background-color: rgb(235, 238, 238);
+    box-shadow: 0 3px 6px rgb(235, 238, 238);
+}
+
+.changeBg{
+    background-color: rgb(250, 224, 224);
+}
+
+.img-container{
+    height: 150px;
+    width: 15%;
+    padding: 20px;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.name-container{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.subdetails-container{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+}
+
+.options button{
+    margin-bottom: 10px;
+}

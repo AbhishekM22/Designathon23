@@ -1,18 +1,25 @@
-
+ HEAD
 form {
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
   }
   
   h1 {
-    text-align: left;
+    text-align: center;
   }
   
   input[type="file"] {
-    display: block;
+    display: flex;
     margin: 2px 0;
   }
   
+  .docs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   input[type="submit"] {
     display: block;
     margin: 2px auto;
@@ -27,22 +34,4 @@ form {
   input[type="submit"]:hover {
     background-color: #45a049;
   }
-
-  .upload-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .upload-link:hover {
-    background-color: #45a049;
-  }
-  
-  
   

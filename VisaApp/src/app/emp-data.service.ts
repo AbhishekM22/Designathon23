@@ -12,7 +12,7 @@ export class EmpDataService {
      address_1: "Anand Street", address_2: "Chennai", pincode: 6300160, district :"Eggatur" ,
       state:" Tamil Nadu" , nationality :" India" , aadharno: 8976545780, password:"sahana123"},
       {
-        empid:1001, emp_lname: " Das", emp_fname: "Arpitha",dob: "07-03-2000", contact_no: "7854790345", 
+        empid:1001, emp_lname: " Das", emp_fname: "Arpita",dob: "07-03-2000", contact_no: "7854790345", 
         address_1: "Gandhi Statue Street", address_2: "Near Ramalayam", pincode: 5200001,
         district :"Vijayawada" , state:" Andhra Pradesh" , nationality :" India" , aadharno: 2435678912, password:"arpitha123"
       }

@@ -1,194 +1,94 @@
-<!DOCTYPE html>
-<app-navbar></app-navbar>
-<div class="metal-body row">
-    <div class=""col-md-4>
-
-<html>
-
-<head>
-
-<title>Visa Application - Personal Details</title>
-
-</head>
-
-<body>
-
-<h2>Check Your Personal Details Here:</h2>
-
-
-
-
-<form>
-
-<label for="first-name">First Name:</label>
-
-<input type="text" id="first-name" name="first-name" required><br><br>
-
-
-
-
-
-<label for="last-name">Last Name:</label>
-
-<input type="text" id="last-name" name="last-name" required><br><br>
-
-
-
-
-
-<label for="father-name">Father Name:</label>
-
-<input type="text" id="father-name" name="father-name" required><br><br>
-
-
-
-
-<label for="mother-name">Mother Name:</label>
-
-<input type="text" id="mother-name" name="mother-name" required><br><br>
-
-
-
-
-<label for="date-of-birth">Date of Birth:</label>
-
-<input type="date" id="date-of-birth" name="date-of-birth" required><br><br>
-
-
-
-
-<label for="contact-number">Contact Number:</label>
-
-<input type="tel" id="contact-number" name="contact-number" required>
-
-
-
-
-<label for="address-line-1">Address Line 1:</label>
-
-<input type="text" id="address-line-1" name="address-line-1" required>
-
-
-
-
-<label for="address-line-2">Address Line 2:</label>
-
-<input type="text" id="address-line-2" name="address-line-2" required>
-
-
-
-
-
-<label for="nationality">Nationality:</label>
-
-<input type="text" id="nationality" name="nationality" required><br><br>
-
-
-
-
-<label for="passport-number">Passport Number:</label>
-
-<input type="text" id="passport-number" name="passport-number" required><br><br>
-
-
-
-
-<label for="passport-expiry">Passport Expiry Date:</label>
-
-<input type="date" id="passport-expiry" name="passport-expiry" required><br><br>
-
-
-
-
-<label for="district">District:</label>
-
-<input type="text" id="district" name="district" required><br><br>
-
-
-
-
-<label for="state">State:</label>
-
-<input type="text" id="state" name="state" required><br><br>
-
-
-
-
-<label for="pincode">Pincode:</label>
-
-<input type="text" id="pincode" name="pincode" required><br><br>
-
-
-
-
-<label for="email">Email:</label>
-
-<input type="email" id="email" name="email" required><br><br>
-
-
-
-
-<label for="phone">Phone:</label>
-
-<input type="tel" id="phone" name="phone" required><br><br>
-
-
-
-
-<button type="button" onclick="history.back()">Back</button>
-
-
-
-
- 
-
-
-
-
-<button type="submit">Save</button>
-
-
-
-
- 
-
-
-
-
-<button type="button" onclick="nextPage()">Next</button>
-
-
-
-
- 
-
-
-
-
-<script>
-
-function nextPage() {
-
-  // Handle the logic for going to the next page
-
-  // For example, you can use JavaScript to navigate to the next URL
-
-  window.location.href = "next-page.html";
-
-}
-
-</script>
-
-
-
-
-
-
-</form>
-
-</body>
-
-</html>
-
-
-</div></div>
+<div class="navbar">
+    <div class="logo">
+        <h3>eVisa</h3>
+        
+        Visa Made Easy
+    </div>
+    <br><br>
+    <div class="menu">
+        <a routerLink="">Home</a>
+        <a routerLink="">About Us</a>
+        <a routerLink="">Contact Us</a>
+        <a routerLink="">Logout</a>
+    </div>
+    <br><br>
+    
+</div>
+
+<div class="addvisacontainer">
+<div class="addvisa">
+    
+    
+    
+    <div class="form-group">
+        <label for="formGroupExampleInput">Employee Id</label>
+        <input type="number" class="form-control" id="price" name="empid" [(ngModel)]="empid" placeholder="Example input" required>
+    </div><br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="empname" name="empname" [(ngModel)]="empname" placeholder="Example input" required>
+    </div><br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Purpose</label>
+        <input type="text" class="form-control" id="purpose" name="purpose" [(ngModel)]="purpose" placeholder="Example input" required>
+    </div><br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Date From</label>
+        <input type="text" class="form-control" id="applied_from" name="applied_from" [(ngModel)]="applied_from" placeholder="Example input" required>
+    </div><br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Date Till</label>
+        <input type="text" class="form-control" id="applied_till" name="applied_till" [(ngModel)]="applied_till" placeholder="Example input" required>
+    </div><br>
+    <div class="form-group">
+        <label >Category</label>
+        <select class="custom-select-my-1 mr-sm-1" id="category" [(ngModel)]="category" name="category">
+            <option selected>Choose</option>
+            <option value="Air India">Dependents</option>
+            <option value="Indigo">Employee</option>
+        </select>
+    </div><br>
+    <div class="form-group">
+        <label >Country</label>
+        <select class="custom-select my-1 mr-sm-1" id="country" [(ngModel)]="country" name="country">
+            <option selected="true" disabled>Choose...</option>
+            <option value="Chennai">India</option>
+            <option value="Mumbai">UK</option>
+        </select>
+    </div><br>
+    <div class="form-group">
+        <label >Visa Type</label>
+        <select class="from-control" id="visa_type" [(ngModel)]="visa_type" name="visa_type">
+            <option selected="true">Choose...</option>
+            <option value="1a">1A Waiver (Netherlands)</option>
+            <option value="B1">B1 (Business)</option>
+            <option value="DP">DP (Dependent Visa)</option>
+            <option value="H1">H1 (US Visa)</option>
+            <option value="H4">H4 (US H1 Dependent Visa)</option>
+            <option value="L1">L1</option>
+            <option value="L1A">L1A</option>
+            <option value="L2">L2</option>
+            <option value="mission">Mission Visa</option>
+            <option value="Nonimmigrant">Nonimmigrant (Thailand)</option>
+            <option value="Schengen">Schengen Visa</option>
+            <option value="Skilled_worker">Skilled Worker Visa</option>
+            <option value="wp_lt">WP (ICT-Long Term)</option>
+            <option value="wp_st">WP (ICT-Short Term)</option>
+            <option value="wp_skill">WP (ICT-Skill Transfer)</option>
+            <option value="wp">WP (Work Permit)</option>
+            <option value="wp_t2">WP Tier2 (General)</option>
+        </select>
+    </div><br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Your Location</label>
+        <input type="text" class="form-control" id="location" name="location" [(ngModel)]="location" placeholder="Example input" required>
+    </div><br>
+    
+    <div class="form-button">
+        <input type="submit" class="btn btn-primary my-1" (click)="saveReq()">
+    </div><br>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary my-1" (click)="gotodash()">Back</button>
+       
+</div>
+</div>

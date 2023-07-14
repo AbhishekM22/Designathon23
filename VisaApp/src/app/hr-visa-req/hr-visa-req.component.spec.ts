@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppreqDetailsComponent } from './appreq-details.component';
+import { HrVisaReqComponent } from './hr-visa-req.component';
 
-describe('AppreqDetailsComponent', () => {
-  let component: AppreqDetailsComponent;
-  let fixture: ComponentFixture<AppreqDetailsComponent>;
+describe('HrVisaReqComponent', () => {
+  let component: HrVisaReqComponent;
+  let fixture: ComponentFixture<HrVisaReqComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppreqDetailsComponent ]
+      declarations: [ HrVisaReqComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AppreqDetailsComponent);
+    fixture = TestBed.createComponent(HrVisaReqComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

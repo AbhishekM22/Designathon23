@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { ManagerDashboardComponent } from './manager-dashboard/manager-dashboard.component';
 import { HrDashboardComponent } from './hr-dashboard/hr-dashboard.component';
 import { DocUploadComponent } from './doc-upload/doc-upload.component';
+import { HrVisaReqComponent } from './hr-visa-req/hr-visa-req.component';
 
 const routes: Routes = [
   {path:'empdash', component: EmpDashboardComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'managerdash',component:ManagerDashboardComponent},
   {path:'hrdash',component:HrDashboardComponent},
-  {path:'empdash/DocUpload',component:DocUploadComponent}
+  {path:'empdash/applyVisa/upload',component:DocUploadComponent},
+  {path:'hrdash/visareqs',component:HrVisaReqComponent}
 ];
 
 @NgModule({

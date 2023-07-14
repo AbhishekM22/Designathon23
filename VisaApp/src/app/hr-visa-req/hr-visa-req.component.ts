@@ -4,12 +4,11 @@ import { VisaDetails } from '../visadetails';
 import { VisareqService } from '../visareq.service';
 
 @Component({
-  selector: 'app-hr-dashboard',
-  templateUrl: './hr-dashboard.component.html',
-  styleUrls: ['./hr-dashboard.component.css']
+  selector: 'app-hr-visa-req',
+  templateUrl: './hr-visa-req.component.html',
+  styleUrls: ['./hr-visa-req.component.css']
 })
-export class HrDashboardComponent {
-
+export class HrVisaReqComponent {
   visaReqs: VisaDetails[]=[];
   constructor(private router:Router,
     public visareqService:VisareqService){}

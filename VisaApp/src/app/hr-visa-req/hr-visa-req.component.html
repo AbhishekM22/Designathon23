@@ -1,0 +1,26 @@
+
+
+<div *ngFor="let req of visaReqs">
+    <div class="req-container">
+       
+        <div class="details-container">
+            <div class="name-container">
+                <p><b>Emp Id : {{req.empid}}</b></p>
+                <p>Name : {{req.empname}}</p>
+                <p>Purpose : {{req.purpose}}</p>
+            </div>
+            <div class="subdetails-container">
+                <p>From : {{req.applied_from}}</p>
+                <p>To : {{req.applied_till}}</p>
+                <P>Category : {{req.category}}</P>
+            </div>
+        </div>
+
+        <div class="options">
+            <button type="button" class="btn btn-primary" >View</button>
+            <button type="button" class="btn btn-danger" >Reject</button>
+            <button type="button" class="btn btn-warning" (click)="toHrDash()">Back to Dashboard</button>
+            
+        </div>       
+    </div>
+</div>
