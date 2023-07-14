@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'managerdash',component:ManagerDashboardComponent},
   {path:'hrdash',component:HrDashboardComponent},
-  {path:'empdash/applyVisa/upload',component:DocUploadComponent}
+  {path:'empdash/DocUpload',component:DocUploadComponent}
 ];
 
 @NgModule({
