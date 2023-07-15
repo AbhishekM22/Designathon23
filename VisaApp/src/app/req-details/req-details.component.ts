@@ -18,7 +18,9 @@ export class ReqDetailsComponent {
     this.visaService.getVisaReqs().forEach(e =>{
       if(e.reqid==this.reqid)
       this.req=e;
-    })
+      console.log(e.reqid);
+    });
+    
   }
 
   constructor(public visaService:VisareqService,

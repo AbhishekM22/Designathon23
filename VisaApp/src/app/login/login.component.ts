@@ -20,6 +20,12 @@ export class LoginComponent {
     if(empid==1001 && passw=="abc"){
       this.router.navigate(['empdash']);
     }
+    else if(empid==1002 && passw=="hr"){
+      this.router.navigate(['hrdash']);
+    }
+    else if(empid==1003 && passw=="manager"){
+      this.router.navigate(['managerdash']);
+    }
     else{
       alert("Invalid Credentials");
     }

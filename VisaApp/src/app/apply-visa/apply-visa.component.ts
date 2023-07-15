@@ -18,7 +18,7 @@ export class ApplyVisaComponent {
   category:string;
   unit:string;
   country:string;
-  status:string;
+  status:string = 'In Process';
   visa_type:string;
   location:string;
   managerid:number;

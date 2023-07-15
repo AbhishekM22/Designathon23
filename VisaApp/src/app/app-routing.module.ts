@@ -18,7 +18,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   {path:'empdash', component: EmpDashboardComponent},
-  {path:'',component:HomeComponent},
+  {path:'',component:LoginComponent},
   {path:'empdash/applyVisa',component:ApplyVisaComponent},
   {path:'empdash/viewVisaReq',component:AppliedVisaComponent},
   {path:'empdash/trackReq',component:TrackApplicationComponent},
@@ -30,8 +30,8 @@ const routes: Routes = [
   {path:'empdash/upload',component:DocUploadComponent},
   {path:'hrdash/visareqs',component:HrVisaReqComponent},
   {path:'managerdash/visareqs',component:HrVisaReqComponent},
-  {path:'managerdash/visareqs/view/:id',component:ReqDetailsComponent},
-  {path:'hrdash/visareqs/view/:id',component:ReqDetailsComponent},
+  {path:'managerdash/visareqs/view/:reqid',component:ReqDetailsComponent},
+  {path:'hrdash/visareqs/view/:reqid',component:ReqDetailsComponent},
   {path:'empdash/contactus',component:ContactUsComponent}
 ];
 
