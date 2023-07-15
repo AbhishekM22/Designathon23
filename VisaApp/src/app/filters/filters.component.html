@@ -1,0 +1,26 @@
+<div class="filterbutton">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="all" [(ngModel)]="filterOp" (change)="optionChanged($event)">
+      <label class="form-check-label" for="inlineRadio1">
+        All({{all}})
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="seatAvail" [(ngModel)]="filterOp" (change)="optionChanged($event)">
+      <label class="form-check-label" for="inlineRadio2">
+        Approved({{ap}})
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="business" [(ngModel)]="filterOp" (change)="optionChanged($event)">
+      <label class="form-check-label" for="inlineRadio3">
+        Rejected({{rj}})
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="economy" [(ngModel)]="filterOp" (change)="optionChanged($event)">
+      <label class="form-check-label" for="inlineRadio4">
+        In Process({{ip}})
+      </label>
+    </div>
+  </div>

@@ -20,7 +20,7 @@ export class HrLoginComponent {
   
 
   hrlogin(empid: number, passw: string){
-    if(empid==1001 && passw=="hr"){
+    if(empid==1002 && passw=="hr"){
       this.router.navigate(['hrdash']);
     }
     else{

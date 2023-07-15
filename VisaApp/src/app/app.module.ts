@@ -17,6 +17,10 @@ import { TrackApplicationComponent } from './track-application/track-application
 import { ManagerLoginComponent } from './manager-login/manager-login.component';
 import { HrLoginComponent } from './hr-login/hr-login.component';
 import { HrVisaReqComponent } from './hr-visa-req/hr-visa-req.component';
+import { FiltersComponent } from './filters/filters.component';
+import { ReqDetailsComponent } from './req-details/req-details.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { HrVisaReqComponent } from './hr-visa-req/hr-visa-req.component';
     TrackApplicationComponent,
     ManagerLoginComponent,
     HrLoginComponent,
-    HrVisaReqComponent
+    HrVisaReqComponent,
+    FiltersComponent,
+    ReqDetailsComponent,
+    ContactUsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

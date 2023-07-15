@@ -17,7 +17,7 @@ export class ManagerLoginComponent {
   }
 
   managerlogin(empid:number,passw:string){
-    if(empid==1001 && passw=="manager"){
+    if(empid==1003 && passw=="manager"){
       this.router.navigate(['/managerdash']);
     }
     else{

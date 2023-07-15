@@ -19,4 +19,25 @@ export class HrVisaReqComponent {
   public toHrDash(){
     this.router.navigate(['hrdash']);
   }
+
+  getAll():number{
+    return this.visaReqs.length;
+  }
+
+  getApproved():number{
+  return this.visaReqs.filter(x=>x.status=="Approved").length;
+  }
+
+  getRejected():number{
+    return this.visaReqs.filter(x=>x.status=="Rejected").length;
+  }
+
+  getInProcess():number{
+    return this.visaReqs.filter(x=>x.status=="In Process").length;
+  }
+
+  filter: string = 'all';
+  optionChanged(data:string){
+    this.filter=data;
+  }
 }

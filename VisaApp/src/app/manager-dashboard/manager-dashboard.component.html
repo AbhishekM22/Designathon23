@@ -1,1 +1,31 @@
-<p>manager-dashboard works!</p>
+<app-navbar></app-navbar>
+<div class="modal-body row">
+    <div class="col-md-4">
+      <!-- Your first column here -->
+      <div class="MenuOptions">
+        <div class="alignContent">
+            <a routerLink="applyVisa">Apply For Visa</a><br><br>
+            <a routerLink="viewVisaReq">View Visa Status</a><br><br>
+            <a routerLink="">Update Details</a><br><br>
+            <a routerLink="trackReq">Track Application</a><br><br>
+            <a routerLink="">Change Password</a><br><br>
+            <a routerLink="visareqs">View Visa Requests</a><br><br>
+            <a routerLink="">FAQs</a>
+        </div>
+       
+      </div>
+      
+
+    </div>
+    <div class="col-md-8">
+      <!-- Your second column here -->
+      <div class="content">
+        <div class="dashboard">
+            <br><br><br>
+            <h3>Welcome to eVisa portal !!</h3><br>
+            <h5>Get your Visa Process completed soon...</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

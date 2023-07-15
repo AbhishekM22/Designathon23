@@ -13,6 +13,8 @@ import { ManagerDashboardComponent } from './manager-dashboard/manager-dashboard
 import { HrDashboardComponent } from './hr-dashboard/hr-dashboard.component';
 import { DocUploadComponent } from './doc-upload/doc-upload.component';
 import { HrVisaReqComponent } from './hr-visa-req/hr-visa-req.component';
+import { ReqDetailsComponent } from './req-details/req-details.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   {path:'empdash', component: EmpDashboardComponent},
@@ -25,8 +27,12 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'managerdash',component:ManagerDashboardComponent},
   {path:'hrdash',component:HrDashboardComponent},
-  {path:'empdash/applyVisa/upload',component:DocUploadComponent},
-  {path:'hrdash/visareqs',component:HrVisaReqComponent}
+  {path:'empdash/upload',component:DocUploadComponent},
+  {path:'hrdash/visareqs',component:HrVisaReqComponent},
+  {path:'managerdash/visareqs',component:HrVisaReqComponent},
+  {path:'managerdash/visareqs/view/:id',component:ReqDetailsComponent},
+  {path:'hrdash/visareqs/view/:id',component:ReqDetailsComponent},
+  {path:'empdash/contactus',component:ContactUsComponent}
 ];
 
 @NgModule({

@@ -16,6 +16,8 @@ export class EmpDataService {
         address_1: "Gandhi Statue Street", address_2: "Near Ramalayam", pincode: 5200001,
         district :"Vijayawada" , state:" Andhra Pradesh" , nationality :" India" , aadharno: 2435678912, password:"arpitha123"
       }
+
+      
   ]
 
   constructor() { }

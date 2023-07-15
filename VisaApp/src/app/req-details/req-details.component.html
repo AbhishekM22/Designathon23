@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="requestDetails">
+    <div class="card mb-3">
+        
+        <div class="card-body">
+            <h5 class="card-title">{{req.reqid}}</h5>
+            <p class="card-text">Name : {{req.empname}}</p>
+            <p class="card-text">From : {{req.applied_from}}</p>
+            <p class="card-text">Till : {{req.applied_till}}</p>
+            <p class="card-text">Status : {{req.status}}</p>
+            <p class="card-text">Country : {{req.country}}</p>
+            <p class="card-text">Visa Type : {{req.visa_type}}</p>
+            <p class="card-text">Category : {{req.category}}</p>
+
+
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary" (click)="navigateToDash()">Back To Dashboard</button>
+        </div>
+    </div>
+</div>
